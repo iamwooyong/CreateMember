@@ -39,13 +39,16 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="pAE-g2-fxn"/>
                                 </connections>
                             </pickerView>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qi3-Kb-XjZ">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qi3-Kb-XjZ">
                                 <rect key="frame" x="0.0" y="317" width="414" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="date" timeIntervalSinceReferenceDate="576912655.62780595">
-                                    <!--2019-04-14 05:30:55 +0000-->
+                                <date key="date" timeIntervalSinceReferenceDate="-401308105.37219405">
+                                    <!--1988-04-14 05:31:34 +0000-->
                                 </date>
                                 <locale key="locale" localeIdentifier="ko_KR"/>
+                                <connections>
+                                    <action selector="changeDatePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="bYn-nN-5Zd"/>
+                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="생년월일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4h-Kc-Ez4">
                                 <rect key="frame" x="52" y="282" width="59" height="21"/>
@@ -74,7 +77,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="datePickerBirthDay" destination="qi3-Kb-XjZ" id="P2b-7v-mqh"/>
                         <outlet property="pickerSex" destination="5w7-e7-RDO" id="2kN-01-Kuo"/>
                         <outlet property="txtName" destination="nIh-Fm-Ada" id="klq-tU-aDJ"/>
                     </connections>
